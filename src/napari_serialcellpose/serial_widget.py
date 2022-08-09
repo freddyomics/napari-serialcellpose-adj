@@ -374,8 +374,14 @@ class SerialWidget(QWidget):
         As the first choice is None, channels are already incremented by one
         as expected by cellpose"""
         
-        channel_to_segment = 0
-        channel_helper = 0
+        if channel_to_segment == None
+            channel_to_segment = 0
+        else:
+            channel_to_segment = channel_to_segment
+        if channel_helper == None
+            channel_helper = 0
+        else:
+            channel_helper = channel_helper
         channel_analysis = None
         if self.qcbox_channel_to_segment.currentText() != 'None':
             channel_to_segment = self.qcbox_channel_to_segment.currentIndex()
