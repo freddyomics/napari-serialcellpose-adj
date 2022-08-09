@@ -124,7 +124,7 @@ def run_cellpose(image_path, cellpose_model, output_path, scaling_factor=1,
     for im, im_m, p in zip(cellpose_output, image_measure, image_path):
         if output_path is not None:
             output_path = Path(output_path)
-            save_path = output_path.joinpath(p.stem+'_mask.tif')
+            save_path = output_path.joinpath(p.stem+'.tif')
             skimage.io.imsave(save_path, im, check_contrast=False)
 
             compute_props(
