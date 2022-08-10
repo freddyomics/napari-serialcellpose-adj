@@ -374,11 +374,11 @@ class SerialWidget(QWidget):
         As the first choice is None, channels are already incremented by one
         as expected by cellpose"""
         
-        if channel_to_segment == None
+        if channel_to_segment == None:
             channel_to_segment = 0
         else:
             channel_to_segment = channel_to_segment
-        if channel_helper == None
+        if channel_helper == None:
             channel_helper = 0
         else:
             channel_helper = channel_helper
